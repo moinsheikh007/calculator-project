@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- === Google Font CDN link === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form action="" name="form">
+                <div class="result">
+                    <input type="text" name="display" id="display">
+                </div>
+
+                <div class="button">
+                    <div class="row">
+                        <input type="button" value="7" name="v7" onclick="val(v7.value)">
+                        <input type="button" value="8" name="v8" onclick="val(v8.value)">
+                        <input type="button" value="9" name="v9" onclick="val(v9.value)">
+                        <input type="button" value="+" name="add" onclick="val(add.value)">
+                    </div>
+
+                    <div class="row">
+                        <input type="button" value="4" name="v4" onclick="val(v4.value)">
+                        <input type="button" value="5" name="v5" onclick="val(v5.value)">
+                        <input type="button" value="6" name="v6" onclick="val(v6.value)">
+                        <input type="button" value="-" name="sub" onclick="val(sub.value)">
+                    </div>
+
+                    <div class="row">
+                        <input type="button" value="1" name="v1" onclick="val(v1.value)">
+                        <input type="button" value="2" name="v2" onclick="val(v2.value)">
+                        <input type="button" value="3" name="v3" onclick="val(v3.value)">
+                        <input type="button" value="*" name="mul" onclick="val(mul.value)">
+                    </div>
+
+                    <div class="row">
+                        <input type="button" value="0" name="v0" onclick="val(v0.value)">
+                        <input type="button" value="." name="vdot" onclick="val(vdot.value)">
+                        <input type="button" value="/" name="vdiv" onclick="val(vdiv.value)">
+                        <input type="button" title="Double Clict to Clear Display" value="=" name="vequal" onclick="calculate()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- ==== Script File ==== -->
+    <script src="script/app.js"></script>
+</body>
+</html>
